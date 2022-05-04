@@ -1,0 +1,19 @@
+{
+    "tutorials" : [
+        {
+            "tutorialName": "firefly",
+            "scriptName": "ffly-w-button", 
+            "defaultCode": "\nimport radio\nimport random\nfrom microbit import display, Image, button_a, sleep\n\n# Create the \"flash\" animation frames. Can you work out how it's done?\n\nflash = [Image().invert()*(i/9) for i in range(9, -1, -1)]\n# The radio won't work unless it's switched on.\nradio.on()\n\n# Event loop.\nwhile True:\n# Add your code here \n"
+        },
+        {
+            "tutorialName": "compass",
+            "scriptName": "compass", 
+            "defaultCode": "\ndef playSound(direction, prev_direction):\n\n\n\n\ndef displayDirection(bearing, prev_direction):\n\n\n\n\n\n\ndef main():\n\n\nwhile True:\n\n    if not compass.is_calibrated():\n\n\n    else:\n\n\n\nif __name__ == \"__main__\":\n    main()\n\n"        
+        },
+        {
+            "tutorialName": "default",
+            "scriptName": "microbit program",
+            "defaultCode": "\nwhile True:\n    display.scroll('Hello, IoTPods!')\n    display.show(Image.DUCK)\n    sleep(2000)\n"
+        }
+    ]
+}
